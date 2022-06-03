@@ -1,0 +1,411 @@
+body{
+    background-image: url(../imagenes/ropa.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat cover;
+    font-family: 'Macondo', cursive;
+}
+
+.conteiner{
+    width: 90%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: hsl(0, 100%, 100%);
+}
+
+/*Estilo de navegacion superior de todas las paginas*/
+.conteiner .conteiner__header{
+    position: sticky;
+    top: 0%;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.conteiner .conteiner__header .conteiner__nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: white ;
+    flex-wrap: wrap;
+}
+
+.conteiner .conteiner__header .conteiner__nav .conteiner__lista{
+    display: flex;
+    list-style: none;
+}
+
+.conteiner .conteiner__header .conteiner__nav .conteiner__lista li{
+    padding:10px;
+}
+
+.conteiner .conteiner__header .conteiner__nav .conteiner__lista li  a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteiner__lista li a:hover{
+    border-bottom: 1px black solid;
+}
+
+@media (max-width: 480px) {
+    .conteiner__lista{
+        flex-direction: column;
+        background-color: rgb(81, 81, 81) ;
+        flex-wrap: wrap;
+        opacity: 0.9;
+        top: 90px;
+        left: 30px;
+        position:sticky;
+        width: 100%;
+        margin: 0;
+        align-content: center;
+    }
+
+    .conteiner .conteiner__header .conteiner__nav .conteiner__lista li  a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .conteiner__lista li a:hover{
+        border-bottom: 1px black solid;
+    }
+
+}
+
+
+
+
+
+/*---------------------------*/
+
+
+
+
+/*Estilo de pagina Home*/
+
+.conteiner .main__home{
+    text-align: center;
+    padding: 0px 20px;
+    line-height: 20px;
+}
+
+.main__option .main__option__list{
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:500px ;
+    grid-gap: 20px;
+}
+
+.home__imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: black solid 3px;
+    border-radius: 50px;
+}
+
+
+.conteiner .main__home .main__option .main__option__list li{
+    list-style: none;
+}
+
+@media (max-width: 480px) {
+    .main__option .main__option__list{
+        box-sizing: content-box;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows:500px ;
+        grid-gap: 20px;
+        padding: 0;
+    }
+    
+}
+
+
+/*Estilo de pagina coleccion*/
+
+.conteiner .main__coleccion{
+    text-align: center;
+  }
+  
+  .mainGrid{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:10px ;
+      grid-auto-rows: 300px;
+      padding: 10px;
+  }
+  
+  
+  .titleMain{
+      display: flex;
+      justify-content: start;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      color: antiquewhite;
+      background: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1));
+      width: 100%;
+      
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .ropa{
+    position: relative;
+    }
+    
+    .ropa:nth-child(1){
+      grid-column-start: span 2;
+  }
+  
+  .ropa:nth-child(5){
+      grid-row-start: span 2;
+  }
+  
+  .ropa:nth-child(6){
+      grid-row-start: span 2 ;
+  }
+
+  /*Mediaquerie movile vertical COLECCION*/
+  @media (max-width: 480px) {
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap:10px ;
+        grid-auto-rows: 300px;
+        padding: 10px;
+    }
+        
+}
+
+/*Mediaquerie movile horizontal COLECCION*/
+@media (max-width: 767px) {
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:10px ;
+        grid-auto-rows: 300px;
+        padding: 10px;
+    }
+        
+}
+
+/*Mediaquerie movile tablet COLECCION*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    
+        
+}
+
+/*escritorios grandes COLECCION*/
+@media (min-width: 1200px) {
+    
+        
+}
+
+
+
+
+
+/*----------------------------------------*/
+
+
+
+
+
+/*Estilos de la pagina kids*/
+
+.conteiner .main__kids{
+    text-align: center;
+}
+
+.kids__div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 400px;
+    object-fit: cover center;
+    padding: 10px;
+}
+
+.ropaKids{
+    position: relative;
+}
+
+.title__kids{
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    bottom: 0px;
+    margin: 0px;
+    width: 100%;
+    color: antiquewhite;
+    background:linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+}
+
+.ropaNiños{
+    width: 100%;
+    height: 100%;
+}
+
+.ropaKids:nth-child(2){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.ropaKids:nth-child(6){
+    grid-row-end: span 2 ;
+}
+
+
+@media (max-width:480px) {
+    .kids__div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-auto-rows: 400px;
+        object-fit: cover center;
+        padding: 10px;
+        grid-auto-flow: dense;
+    }
+}
+
+
+
+/*------------------------------------*/
+
+
+
+
+
+
+
+
+/*Estilo de pagina info*/
+
+.main__info{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    
+    /*Areas*/
+    grid-template-areas: 
+        "talle envio";
+}
+
+.info__div1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+    /*Areas*/
+    grid-area: talle;
+}
+
+.info__div2{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    /*Areas*/
+    grid-area: envio;
+}
+
+/* INFO Media queries*/
+
+@media (max-width: 480px) {
+    .main__info{
+        display: grid;
+        grid-gap: 40px;
+        padding: 10px;
+        
+        /*Areas*/
+        grid-template-areas: 
+            "talle talle"
+            "envio envio";
+    }
+    
+}
+
+
+/*Footer de todas las paginas*/
+
+.conteiner__footer{
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    background-image: url(../imagenes/fondo-footoer2.png);
+    background-size: cover;
+    
+    
+    /*areas*/
+     grid-template-areas:
+     "redes num direccion horarios";
+   
+}
+
+.redes{
+ grid-area: redes;
+}
+
+.num{
+ grid-area: num;
+}
+
+.direccion{
+ grid-area: direccion;
+}
+
+.horarios{
+ grid-area: horarios;
+}
+
+@media (max-width: 480px) {
+ .conteiner__footer{
+     grid-template-areas:
+     "redes redes redes redes"
+     "num num num num"
+     "direccion direccion direccion direccion"
+     "horarios horarios horarios horarios";
+
+     grid-row: 1fr 1fr 1fr 1fr;
+ }
+
+}
+
+.conteiner__footer .redes{
+    grid-template-rows: 50% 50%;
+}
+.conteiner__footer .redes nav a{
+    text-decoration: none;
+}
+
+.conteiner__footer .redes nav{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    row-gap: 5px;
+}
+
+.conteiner__footer .num{
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    row-gap: 5px;
+}
+
+.conteiner__footer .direccion{
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+}
+
+.conteiner__footer .horarios{
+    display: grid;
+    grid-template-rows: 40% 30% 30%; 
+}
