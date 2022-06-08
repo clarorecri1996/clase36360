@@ -43,7 +43,6 @@ body{
 .conteiner .conteiner__header .conteiner__nav .conteiner__lista li  a{
     text-decoration: none;
     color: black;
-    
 }
 
 .conteiner__lista li a:hover{
@@ -109,40 +108,45 @@ body{
     border-radius: 50px;
 }
 
-.imgList{
-    position: relative;
-}
-
-.titleIndex{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:0px;
-    bottom: 0px;
-    color: antiquewhite;
-    text-decoration: none;
-    transition: all 500ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-.main__option .main__option__list :hover > .titleIndex{
-    opacity: 1;
-    visibility: visible;
-}
-
-.main__option .main__option__list :hover > .home__imagen{
-    transform: scale(1.05);
-}
 
 .conteiner .main__home .main__option .main__option__list li{
     list-style: none;
 }
+
+.listImg{
+    position: relative;
+    width: 100%;
+}
+
+.textImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    text-decoration: none;
+    color: azure;
+    transition: all 600ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.main__option .main__option__list .listImg:hover > .textImg{
+    visibility: visible;
+    opacity: 1;
+}
+
+.main__option .main__option__list .listImg:hover > .home__imagen{
+    transform: scale(1.05);
+}
+
+
+
+
 
 @media (max-width: 480px) {
     .main__option .main__option__list{
@@ -372,6 +376,7 @@ body{
 
 .conteiner__footer{
     text-align: center;
+    font-size: 16px;
     display: grid;
     padding: 20px;
     background-image: url(../imagenes/fondo-footoer2.png);
@@ -386,6 +391,7 @@ body{
 
 .redes{
  grid-area: redes;
+ 
 }
 
 .num{
