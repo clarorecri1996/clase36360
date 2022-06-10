@@ -330,11 +330,13 @@ body{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
+
     padding: 10px;
     
     /*Areas*/
     grid-template-areas: 
-        "talle envio";
+        "talle envio"
+        "trabaja trabaja";
 }
 
 .info__div1{
@@ -350,9 +352,20 @@ body{
     display: grid;
     justify-items: center;
     align-items: center;
+    margin-bottom: 10px; 
 
     /*Areas*/
     grid-area: envio;
+    
+}
+
+.info__div3{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    /*Areas*/
+    grid-area: trabaja;
 }
 
 /* INFO Media queries*/
@@ -371,6 +384,19 @@ body{
     
 }
 
+/*Sub pagina de INFO*/
+
+.carousel-inner img{
+    max-height: 500px;
+}
+
+.padre1{
+    padding-right: 0;
+}
+
+.padre2{
+    padding-left: 0;
+}
 
 /*Footer de todas las paginas*/
 
