@@ -433,7 +433,155 @@ body{
 }
 
 
+/*Sub pag. Capacitacion*/
 
+.marketing{
+    text-align: center;
+    margin: 15px 20px; 
+}
+
+.marketing h1{
+    padding-bottom: 10px;
+}
+
+.gridMarketing{
+    display: grid;
+    margin: 50px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "requisitos titulo";
+
+}
+
+.requisitos{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 1px;
+    grid-area: requisitos;
+}
+
+.requisitos p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.titulo{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 1px 1px 1px;
+    grid-area: titulo;
+}
+
+.titulo p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.personal{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.carta{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    font-family:'Times New Roman', Times, serif ;
+    background-color:rgba(255, 248, 248, 0.74);
+}
+
+.carta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translate(-3%);
+}
+
+.carta img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.carta .descripcion{
+    margin-top: 20px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carta .descripcion h2{
+    margin-bottom: 0px;
+}
+
+.carta .descripcion h5{
+    color: rgb(80, 80, 80);
+    font-size: 16px;
+}
+
+.carta .descripcion p{
+    color: rgb(80, 80, 80);
+    font-size: 13px;
+    
+}
+
+.datosCurso{
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid black;
+    grid-template-areas:
+        "titulo titulo titulo"  
+        ". dato1 ."
+        ". dato2 ."
+        ". dato3 ."
+        ". boton .";
+        
+}
+
+.datosCurso h4{
+    margin-top: 20px;
+    grid-area: titulo;
+    text-align: center;
+}
+
+.datosCurso .dato1{
+    margin-bottom: 20px;
+    grid-area: dato1;
+}
+
+.datosCurso .dato2{
+    margin-bottom: 20px;
+    grid-area: dato2;
+}
+
+.datosCurso .dato3{
+    margin-bottom: 20px;
+    grid-area: dato3;
+}
+
+.datosCurso button{
+    margin-bottom: 20px;
+    
+    width: 100px;
+    grid-area: boton;
+}
 /*Footer de todas las paginas*/
 
 .conteiner__footer{
