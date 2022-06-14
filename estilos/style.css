@@ -50,7 +50,7 @@ body{
     
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .conteiner__lista{
         flex-direction: column;
         background-color: rgb(81, 81, 81) ;
@@ -148,7 +148,7 @@ body{
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .main__option .main__option__list{
         box-sizing: content-box;
         display: grid;
@@ -211,7 +211,7 @@ body{
   }
 
   /*Mediaquerie movile vertical COLECCION*/
-  @media (max-width: 480px) {
+  @media (max-width: 576px) {
     .mainGrid{
         display: grid;
         grid-template-columns: 1fr;
@@ -301,7 +301,7 @@ body{
 }
 
 
-@media (max-width:480px) {
+@media (max-width:576px) {
     .kids__div{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -370,7 +370,7 @@ body{
 
 /* INFO Media queries*/
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .main__info{
         display: grid;
         grid-gap: 40px;
@@ -405,6 +405,7 @@ body{
 
 .carousel-inner img{
     height: 500px;
+    
 }
 
 .imgCapacitacion{
@@ -432,6 +433,21 @@ body{
     color: black;
 }
 
+@media (max-width: 576px) {
+    .contenedorImg img{
+        width: 100%;
+    }
+        
+}
+
+@media (max-width:576px) {
+    .navegacionSub{
+        background-color: rgb(81, 81, 81) ;
+       }
+    .navegacionSub ul li a{
+        color: aliceblue;
+    }
+}
 
 /*Sub pag. Capacitacion*/
 
@@ -542,7 +558,7 @@ body{
 
 .datosCurso{
     display: grid;
-    /*grid-template-columns: repeat(3, 1fr);*/
+    width: 100%;
     margin-top: 50px;
     width: 100%;
     border: 1px solid black;
@@ -576,11 +592,50 @@ body{
     grid-area: dato3;
 }
 
-.datosCurso button{
+.datosCurso .enviarForm{
     margin-bottom: 20px;
-    
-    width: 100px;
     grid-area: boton;
+}
+
+@media (max-width:576px) {
+    .gridMarketing{
+        display: grid;
+        margin: 50px 100px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas: 
+            "requisitos requisitos"
+            "titulo titulo";
+    }
+
+    .personal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (max-width:480px){
+    .requisitos{
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 2px 1px 1px 1px;
+        grid-area: requisitos;
+    }
+    .titulo{
+        border: 1px solid black;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 2px 1px 1px 1px;
+        grid-area: titulo;
+    }
 }
 /*Footer de todas las paginas*/
 
@@ -616,7 +671,7 @@ body{
  grid-area: horarios;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
  .conteiner__footer{
      grid-template-areas:
      "redes redes redes redes"
