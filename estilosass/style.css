@@ -152,7 +152,10 @@
 
 @media (max-width: 576px) {
   .conteiner__footer {
-        grid-template-areas: "redes redes redes redes" "num num num num" "direccion direccion direccion direccion" "horarios horarios horarios horarios";
+        grid-template-areas: "redes redes redes redes"
+ "num num num num"
+ "direccion direccion direccion direccion"
+ "horarios horarios horarios horarios";
     grid-row: 1fr 1fr 1fr 1fr;
   }
 }
@@ -411,7 +414,8 @@ body {
       grid-template-columns: 1fr 1fr;
   padding: 10px;
   /*Areas*/
-      grid-template-areas: "talle envio" "trabaja trabaja";
+      grid-template-areas: "talle envio"
+ "trabaja trabaja";
 }
 
 .main__info .info__div1 {
@@ -475,7 +479,9 @@ body {
     grid-gap: 40px;
     padding: 10px;
     /*Areas*/
-        grid-template-areas: "talle talle" "envio envio" "trabaja trabaja";
+        grid-template-areas: "talle talle"
+ "envio envio"
+ "trabaja trabaja";
   }
 }
 
@@ -677,7 +683,11 @@ body {
   margin-top: 50px;
   width: 100%;
   border: 1px solid black;
-      grid-template-areas: "titulo titulo titulo"   ". dato1 ." ". dato2 ." ". dato3 ." ". boton .";
+      grid-template-areas: "titulo titulo titulo"  
+ ". dato1 ."
+ ". dato2 ."
+ ". dato3 ."
+ ". boton .";
 }
 
 .datosCurso h4 {
@@ -745,7 +755,8 @@ body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-        grid-template-areas: "requisitos requisitos" "titulo titulo";
+        grid-template-areas: "requisitos requisitos"
+ "titulo titulo";
   }
   .personal {
     display: -webkit-box;
