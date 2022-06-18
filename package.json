@@ -1,0 +1,23 @@
+{
+  "name": "clase36360",
+  "version": "1.0.0",
+  "description": "Venta de ropa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarorecri1996/clase36360.git"
+  },
+  "author": "claudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clarorecri1996/clase36360/issues"
+  },
+  "homepage": "https://github.com/clarorecri1996/clase36360#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,3 +1,5 @@
+@import "./variantes";
+
 .conteiner__header{
     position: sticky;
     top: 0%;
@@ -15,9 +17,11 @@
         .conteiner__lista{
             display: flex;
             list-style: none;
-            
+            align-self: center;            
+            margin: 0;
             li{
             padding:10px;
+            
             a{
                 text-decoration: none;
                 color: black;
