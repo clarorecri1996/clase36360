@@ -1,0 +1,60 @@
+/*Navegacion superior*/
+.bootsList{
+    list-style: none;
+}
+
+.bootsList li a{
+    text-decoration: none;
+    color: black;
+}
+
+.bootsList li a:hover{
+    border-bottom: 1px solid black;
+    
+}
+
+.carousel-inner img{
+    height: 500px;
+    
+}
+
+.imgCapacitacion{
+    width: 451px;
+    height: 200px;
+}
+
+.imgCapacitacion:hover{
+    transform: scale(1.05);
+}
+
+/*Navegacion inferior*/
+
+.bootsFooter{
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    background-image: url(../imagenes/fondo-footoer2.png);
+    background-size: cover;
+
+}
+
+.bootsFooter .redes .redes1 a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 576px) {
+    .contenedorImg img{
+        width: 100%;
+    }
+        
+}
+
+@media (max-width:576px) {
+    .navegacionSub{
+        background-color: rgb(81, 81, 81) ;
+       }
+    .navegacionSub ul li a{
+        color: aliceblue;
+    }
+}

@@ -74,109 +74,6 @@
   }
 }
 
-.conteiner__footer {
-  text-align: center;
-  font-size: 16px;
-  display: -ms-grid;
-  display: grid;
-  padding: 20px;
-  background-image: url(../imagenes/fondo-footoer2.png);
-  background-size: cover;
-  /*areas*/
-      grid-template-areas: "redes num direccion horarios";
-}
-
-.conteiner__footer .redes {
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: redes;
-}
-
-.conteiner__footer .redes nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 33% 33% 33%;
-      grid-template-rows: 33% 33% 33%;
-  row-gap: 5px;
-}
-
-.conteiner__footer .redes a {
-  text-decoration: none;
-}
-
-.conteiner__footer .num {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 40% 30% 30%;
-      grid-template-rows: 40% 30% 30%;
-  row-gap: 5px;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: num;
-}
-
-.conteiner__footer .direccion {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 40% 30% 30%;
-      grid-template-rows: 40% 30% 30%;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: direccion;
-}
-
-.conteiner__footer .horarios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 40% 30% 30%;
-      grid-template-rows: 40% 30% 30%;
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 4;
-  grid-column: 4;
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: horarios;
-}
-
-@media (max-width: 576px) {
-  .conteiner__footer {
-        grid-template-areas: "redes redes redes redes" "num num num num" "direccion direccion direccion direccion" "horarios horarios horarios horarios";
-    grid-row: 1fr 1fr 1fr 1fr;
-  }
-}
-
-body {
-  background-image: url(../imagenes/ropa.webp);
-  background-size: 100% 100%;
-  background-repeat: no-repeat cover;
-  font-family: 'Macondo', cursive;
-}
-
-.conteiner {
-  width: 90%;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-}
-
-/*Estilo de pagina Home*/
 .main__home {
   text-align: center;
   padding: 0px 20px;
@@ -274,7 +171,6 @@ body {
   }
 }
 
-/*Estilo de pagina coleccion*/
 .conteiner .main__coleccion {
   text-align: center;
 }
@@ -362,7 +258,6 @@ body {
   }
 }
 
-/*Estilos de la pagina kids*/
 .main__kids {
   text-align: center;
 }
@@ -436,7 +331,6 @@ body {
   }
 }
 
-/*Estilo de pagina info*/
 .main__info {
   display: -ms-grid;
   display: grid;
@@ -591,7 +485,6 @@ body {
   }
 }
 
-/*Sub pagina de INFO*/
 /*Navegacion superior*/
 .bootsList {
   list-style: none;
@@ -649,7 +542,6 @@ body {
   }
 }
 
-/*Sub pag. Capacitacion*/
 .marketing {
   text-align: center;
   margin: 15px 20px;
@@ -921,5 +813,107 @@ body {
     -ms-grid-column-span: 3;
     grid-area: titulo;
   }
+}
+
+.conteiner__footer {
+  text-align: center;
+  font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  padding: 20px;
+  background-image: url(../imagenes/fondo-footoer2.png);
+  background-size: cover;
+  /*areas*/
+      grid-template-areas: "redes num direccion horarios";
+}
+
+.conteiner__footer .redes {
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: redes;
+}
+
+.conteiner__footer .redes nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
+  row-gap: 5px;
+}
+
+.conteiner__footer .redes a {
+  text-decoration: none;
+}
+
+.conteiner__footer .num {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 30% 30%;
+      grid-template-rows: 40% 30% 30%;
+  row-gap: 5px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: num;
+}
+
+.conteiner__footer .direccion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 30% 30%;
+      grid-template-rows: 40% 30% 30%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: direccion;
+}
+
+.conteiner__footer .horarios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 40% 30% 30%;
+      grid-template-rows: 40% 30% 30%;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: horarios;
+}
+
+@media (max-width: 576px) {
+  .conteiner__footer {
+        grid-template-areas: "redes redes redes redes" "num num num num" "direccion direccion direccion direccion" "horarios horarios horarios horarios";
+    grid-row: 1fr 1fr 1fr 1fr;
+  }
+}
+
+body {
+  background-image: url(../imagenes/ropa.webp);
+  background-size: 100% 100%;
+  background-repeat: no-repeat cover;
+  font-family: 'Macondo', cursive;
+}
+
+.conteiner {
+  width: 90%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
