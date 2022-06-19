@@ -183,6 +183,21 @@ body {
   line-height: 20px;
 }
 
+.main__home h1 {
+  margin: 30px 15px;
+}
+
+.main__home .titleHome1 {
+  margin: 50px 15px;
+  background-color: rgba(217, 140, 140, 0.09);
+  -webkit-box-shadow: 2px 1px 1px 1px;
+          box-shadow: 2px 1px 1px 1px;
+}
+
+.main__home .titleHome2 {
+  margin: 20px 15px;
+}
+
 .main__home .main__option .main__option__list {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -276,6 +291,13 @@ body {
 
 .conteiner .main__coleccion .mainGrid .ropa {
   position: relative;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.conteiner .main__coleccion .mainGrid .ropa:hover {
+  -webkit-transform: translate(-1%);
+          transform: translate(-1%);
 }
 
 .conteiner .main__coleccion .mainGrid .ropa .titleMain {
@@ -359,6 +381,13 @@ body {
 
 .main__kids .kids__div .ropaKids {
   position: relative;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.main__kids .kids__div .ropaKids:hover {
+  -webkit-transform: translate(-1%);
+          transform: translate(-1%);
 }
 
 .main__kids .kids__div .ropaKids .title__kids {
@@ -416,16 +445,13 @@ body {
       grid-template-columns: 1fr 1fr;
   padding: 10px;
   /*Areas*/
-      grid-template-areas: "talle envio" "trabaja trabaja";
+      grid-template-areas: "talle talle" "envio envio" "trabaja trabaja";
 }
 
 .main__info .info__div1 {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
   /*Areas*/
   -ms-grid-row: 1;
   grid-row: 1;
@@ -433,7 +459,84 @@ body {
   grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: talle;
+}
+
+.main__info .info__div1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: cambio 50s infinite alternate linear;
+          animation: cambio 50s infinite alternate linear;
+  width: 400%;
+  padding: 0;
+}
+
+.main__info .info__div1 ul li {
+  width: 100%;
+  list-style: none;
+}
+
+.main__info .info__div1 ul li img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
 }
 
 .main__info .info__div2 {
@@ -443,14 +546,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
+  margin: 0 50px 10px 50px;
+  background-color: rgba(217, 140, 140, 0.09);
   /*Areas*/
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: envio;
 }
 
@@ -461,12 +566,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 50px 10px 50px;
+  background-color: rgba(217, 140, 140, 0.09);
   /*Areas*/
   -ms-grid-row: 2;
   grid-row: 2;
   -ms-grid-column: 1;
   grid-column: 1;
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: trabaja;
