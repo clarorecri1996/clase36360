@@ -1,0 +1,35 @@
+.subColeccion{
+    margin: 20px 10px;
+    width: 100%;
+    .subRopa{
+        display: flex;
+        margin-bottom: 10px;
+        
+        .subImg{
+            width: 0 0;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+                
+            img{
+                width: 100%;
+               height: 100%;
+            }
+        }
+
+        .subDetalle{
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 100%;
+            display: flex;
+            
+            .comprar{
+                display: flex;
+                width: 100%;
+                align-self: flex-end;
+                justify-content: end;
+            }
+        }
+    }
+
+}

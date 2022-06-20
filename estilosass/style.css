@@ -258,6 +258,51 @@
   }
 }
 
+.subColeccion {
+  margin: 20px 10px;
+  width: 100%;
+}
+
+.subColeccion .subRopa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.subColeccion .subRopa .subImg {
+  width: 0 0;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.subColeccion .subRopa .subImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.subColeccion .subRopa .subDetalle {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subColeccion .subRopa .subDetalle .comprar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .main__kids {
   text-align: center;
 }
