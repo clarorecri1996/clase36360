@@ -1,18 +1,25 @@
 .main__home{
+    @include margenes;
     text-align: center;
     padding: 0px 20px;
     line-height: 20px;
     h1{
-        margin: 30px 15px;
+       
+        @extend %title;
     }
     
     .titleHome1{
         margin: 50px 15px;  
-        background-color: $fondo-color;
+        background-color: map-get($colores , "fondo-color");
         box-shadow: $sombra;
+
+        h2{
+            @extend %title;
+        }
     }
     .titleHome2{
         margin: 20px 15px;
+        @extend %title;
     }
     .main__option{
         

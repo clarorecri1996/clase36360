@@ -1,5 +1,13 @@
+@import "../partials/variantes";
+
+
 .main__kids{
     text-align: center;
+    @include margenes;
+
+    h1{
+        @extend %title;
+    }
     
     .kids__div{
         display: grid;

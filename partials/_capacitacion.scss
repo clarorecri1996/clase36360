@@ -1,9 +1,15 @@
+.navegacionBt{
+    background-color: map-get($colores, "fondo-navegador" );
+}
+
 .marketing{
     text-align: center;
     margin: 15px 20px; 
+    @include margenes;
     
     h1{
         padding-bottom: 10px;
+        @extend %title;
     }
   
     .gridMarketing{

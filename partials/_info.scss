@@ -1,8 +1,12 @@
+@import "../partials/variantes";
+
+
 .main__info{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    @include margenes;
     
     /*Areas*/
     grid-template-areas: 
@@ -58,13 +62,18 @@
         justify-items: center;
         align-items: center;
         margin: 0 50px 10px 50px; 
-        background-color: $fondo-color;
+        background-color: map-get($colores, "fondo-color" );
+        @include margenes;
         
         /*Areas*/
         grid-row: 1;
         grid-column: 2;
         grid-area: envio;
         
+        h2{
+            @extend %title;
+            
+        }
     }
     
     .info__div3{
@@ -72,12 +81,16 @@
         justify-items: center;
         align-items: center;
         margin: 0 50px 10px 50px; 
-        background-color: $fondo-color;
-            
+        background-color: map-get($colores, "fondo-color" );
+        @include margenes;            
         /*Areas*/
         grid-row: 2;
         grid-column: 1;
         grid-area: trabaja;
+        }
+
+        h2{
+            @extend %title
         }
     }
 

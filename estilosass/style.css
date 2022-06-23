@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 .conteiner__header {
   position: -webkit-sticky;
   position: sticky;
@@ -18,9 +23,17 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  background-color: white;
+  background-color: #66A5AD;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.conteiner__header .conteiner__nav .logo1 {
+  margin-left: 10px;
+}
+
+.conteiner__header .conteiner__nav .logo1 img {
+  border-radius: 10px;
 }
 
 .conteiner__header .conteiner__nav .conteiner__lista {
@@ -34,16 +47,22 @@
 }
 
 .conteiner__header .conteiner__nav .conteiner__lista li {
-  padding: 10px;
+  margin: 10px;
 }
 
 .conteiner__header .conteiner__nav .conteiner__lista li a {
   text-decoration: none;
   color: black;
+  margin: 5px;
+  padding: 5px;
 }
 
 .conteiner__header .conteiner__nav .conteiner__lista li a:hover {
-  border-bottom: 1px black solid;
+  background-color: #07575B;
+  border-radius: 50px;
+  color: white;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 @media (max-width: 576px) {
@@ -75,18 +94,16 @@
 }
 
 .main__home {
+  margin: 25px;
+  padding: 0;
   text-align: center;
   padding: 0px 20px;
   line-height: 20px;
 }
 
-.main__home h1 {
-  margin: 30px 15px;
-}
-
 .main__home .titleHome1 {
   margin: 50px 15px;
-  background-color: rgba(217, 140, 140, 0.09);
+  background-color: #C4DFE6;
   -webkit-box-shadow: 2px 1px 1px 1px;
           box-shadow: 2px 1px 1px 1px;
 }
@@ -171,11 +188,13 @@
   }
 }
 
-.conteiner .main__coleccion {
+.main__coleccion {
   text-align: center;
+  margin: 25px;
+  padding: 0;
 }
 
-.conteiner .main__coleccion .mainGrid {
+.main__coleccion .mainGrid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -185,18 +204,18 @@
   padding: 10px;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa {
+.main__coleccion .mainGrid .ropa {
   position: relative;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa:hover {
+.main__coleccion .mainGrid .ropa:hover {
   -webkit-transform: translate(-1%);
           transform: translate(-1%);
 }
 
-.conteiner .main__coleccion .mainGrid .ropa .titleMain {
+.main__coleccion .mainGrid .ropa .titleMain {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,22 +232,22 @@
   width: 100%;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa .imagen {
+.main__coleccion .mainGrid .ropa .imagen {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa:nth-child(1) {
+.main__coleccion .mainGrid .ropa:nth-child(1) {
   grid-column: span 2;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa:nth-child(5) {
+.main__coleccion .mainGrid .ropa:nth-child(5) {
   grid-row: span 2;
 }
 
-.conteiner .main__coleccion .mainGrid .ropa:nth-child(6) {
+.main__coleccion .mainGrid .ropa:nth-child(6) {
   grid-row: span 2;
 }
 
@@ -256,6 +275,11 @@
     grid-auto-rows: 300px;
     padding: 10px;
   }
+}
+
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
 }
 
 .subColeccion {
@@ -303,8 +327,15 @@
           justify-content: end;
 }
 
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 .main__kids {
   text-align: center;
+  margin: 25px;
+  padding: 0;
 }
 
 .main__kids .kids__div {
@@ -376,6 +407,11 @@
   }
 }
 
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 .main__info {
   display: -ms-grid;
   display: grid;
@@ -383,6 +419,8 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   padding: 10px;
+  margin: 25px;
+  padding: 0;
   /*Areas*/
       grid-template-areas: "talle talle" "envio envio" "trabaja trabaja";
 }
@@ -486,7 +524,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 50px 10px 50px;
-  background-color: rgba(217, 140, 140, 0.09);
+  background-color: #C4DFE6;
+  margin: 25px;
+  padding: 0;
   /*Areas*/
   -ms-grid-row: 1;
   grid-row: 1;
@@ -506,7 +546,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 50px 10px 50px;
-  background-color: rgba(217, 140, 140, 0.09);
+  background-color: #C4DFE6;
+  margin: 25px;
+  padding: 0;
   /*Areas*/
   -ms-grid-row: 2;
   grid-row: 2;
@@ -528,6 +570,11 @@
     /*Areas*/
         grid-template-areas: "talle talle" "envio envio" "trabaja trabaja";
   }
+}
+
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
 }
 
 /*Navegacion superior*/
@@ -587,9 +634,15 @@
   }
 }
 
+.navegacionBt {
+  background-color: #66A5AD;
+}
+
 .marketing {
   text-align: center;
   margin: 15px 20px;
+  margin: 25px;
+  padding: 0;
 }
 
 .marketing h1 {
@@ -860,6 +913,11 @@
   }
 }
 
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 .conteiner__footer {
   text-align: center;
   font-size: 16px;
@@ -894,6 +952,10 @@
 
 .conteiner__footer .redes a {
   text-decoration: none;
+}
+
+.conteiner__footer .redes a .icon1 {
+  font-size: 2rem;
 }
 
 .conteiner__footer .num {
@@ -946,8 +1008,13 @@
   }
 }
 
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 body {
-  background-image: url(../imagenes/ropa.webp);
+  background: url(../imagenes/fondo-pantalla3.webp);
   background-size: 100% 100%;
   background-repeat: no-repeat cover;
   font-family: 'Macondo', cursive;

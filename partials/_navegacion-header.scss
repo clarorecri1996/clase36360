@@ -11,8 +11,16 @@
         justify-content: space-between;
         position: sticky;
         top: 0px;
-        background-color: white ;
+        background-color: #66A5AD;
         flex-wrap: wrap;
+        
+        .logo1{
+            margin-left: 10px;
+            
+            img{
+                border-radius: 10px;
+            }
+        }
         
         .conteiner__lista{
             display: flex;
@@ -20,15 +28,20 @@
             align-self: center;            
             margin: 0;
             li{
-            padding:10px;
+            margin: 10px;
+            
             
             a{
                 text-decoration: none;
                 color: black;
+                margin: 5px;
+                padding: 5px;
             }
             a:hover{
-                border-bottom: 1px black solid;
-                
+                background-color: #07575B;
+                border-radius: 50px ;
+                color: white;
+                transition: $transicion;
             }
             }
         }
