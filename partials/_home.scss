@@ -1,3 +1,6 @@
+@import "../partials/variantes";
+
+
 .main__home{
     @include margenes;
     text-align: center;
@@ -26,9 +29,26 @@
         .main__option__list{
             box-sizing: content-box;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-auto-rows:500px ;
+            grid-template-areas: 
+                "prenda1 prenda2 prenda3";
             grid-gap: 20px;
+            
+            @include media-up(sm){
+                grid-template-areas: 
+                "ropa1 ropa1 ropa1"
+                "ropa2 ropa2 ropa2"
+                "ropa3 ropa3 ropa3";
+            }
+            .prenda1{
+                grid-area: prenda1;
+            }
+            .prenda2{
+                grid-area: prenda2;
+            }
+            .prenda3{
+                grid-area: prenda3;
+            }
+        }
             
             .listImg{
                 position: relative;
@@ -70,16 +90,14 @@
         }
 
     }
-}
 
-@media (max-width: 576px) {
-    .main__option .main__option__list{
-        box-sizing: content-box;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows:500px ;
-        grid-gap: 20px;
-        padding: 0;
+    @media (max-width: 576px){
+        .main__option__list{
+            grid-template-areas: 
+            "prenda1 prenda1 prenda1"
+            "prenda2 prenda2 prenda2"
+            "prenda3 prenda3 prenda3";
+            
+            grid-row: 1fr 1fr 1fr;
+        }
     }
-    
-}

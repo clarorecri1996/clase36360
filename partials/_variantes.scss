@@ -27,3 +27,15 @@ $colores: (
     "colorTitulos": #07575B,
 );
 
+$breackpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px
+);
+
+
+@mixin media-up ($breackpoints)  {
+    @media screen and (min-width: map-get($breackpoints, $breackpoints)) {
+
+    }
+}

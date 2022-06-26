@@ -93,6 +93,11 @@
   }
 }
 
+.main__home h1, .main__home .titleHome1 h2, .main__home .titleHome2, .main__coleccion h1, .main__kids h1, .main__info .info__div2 h2, .main__info h2, .marketing h1 {
+  color: #07575B;
+  font-family: 'macondo', curive;
+}
+
 .main__home {
   margin: 25px;
   padding: 0;
@@ -117,19 +122,35 @@
           box-sizing: content-box;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 500px;
+      grid-template-areas: "prenda1 prenda2 prenda3";
   grid-gap: 20px;
 }
 
-.main__home .main__option .main__option__list .listImg {
+.main__home .main__option .main__option__list .prenda1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: prenda1;
+}
+
+.main__home .main__option .main__option__list .prenda2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: prenda2;
+}
+
+.main__home .main__option .main__option__list .prenda3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: prenda3;
+}
+
+.main__home .main__option .listImg {
   position: relative;
   width: 100%;
   list-style: none;
 }
 
-.main__home .main__option .main__option__list .listImg .home__imagen {
+.main__home .main__option .listImg .home__imagen {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -138,12 +159,12 @@
   border-radius: 50px;
 }
 
-.main__home .main__option .main__option__list .listImg:hover > .textImg {
+.main__home .main__option .listImg:hover > .textImg {
   visibility: visible;
   opacity: 1;
 }
 
-.main__home .main__option .main__option__list .listImg .textImg {
+.main__home .main__option .listImg .textImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,7 +188,7 @@
   text-align: center;
 }
 
-.main__home .main__option .main__option__list .listImg:hover > .home__imagen {
+.main__home .main__option .listImg:hover > .home__imagen {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition: all 400ms ease;
@@ -175,16 +196,9 @@
 }
 
 @media (max-width: 576px) {
-  .main__option .main__option__list {
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-auto-rows: 500px;
-    grid-gap: 20px;
-    padding: 0;
+  .main__option__list {
+        grid-template-areas: "prenda1 prenda1 prenda1" "prenda2 prenda2 prenda2" "prenda3 prenda3 prenda3";
+    grid-row: 1fr 1fr 1fr;
   }
 }
 
